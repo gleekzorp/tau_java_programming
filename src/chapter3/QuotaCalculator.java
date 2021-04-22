@@ -28,5 +28,5 @@ public class QuotaCalculator {
             System.out.println("You did not make your quota.  You were " + salesShort + " sales short");
         }
     }
-    
+
 }
