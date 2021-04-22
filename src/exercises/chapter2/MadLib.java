@@ -1,8 +1,8 @@
-package chapter2;
+package exercises.chapter2;
 
 import java.util.Scanner;
 
-public class MadLibChallenge {
+public class MadLib {
 
     public static void main(String[] arg) {
         // 1. Ask for season of the year
@@ -20,7 +20,7 @@ public class MadLibChallenge {
         scanner.close();
 
         // 4. Display the madlib
-        System.out.println("One a " + adjective + " " + season + " day, I drink a minimum of " + number + " cups of coffee");
+        System.out.println("On a " + adjective + " " + season + " day, I drink a minimum of " + number + " cups of coffee");
     }
 
 }
