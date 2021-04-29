@@ -3,15 +3,11 @@ package chapter9;
 public class InheritanceTester {
 
     public static void main(String[] args){
-        Employee employee = new Employee();
 
-        Rectangle rectangle = new Rectangle();
-        rectangle.print();
+        Mother mom = new Mother();
+        mom.setName("Glenda");
 
-        Square square = new Square();
-        square.print("square");
-
-        testSquareOverride();
+        System.out.println(mom.getName() + " is a " + mom.getGender());
     }
 
     public static void testSquareOverride(){
@@ -24,5 +20,18 @@ public class InheritanceTester {
         square.setLength(4);
         square.setWidth(8);
         System.out.println(square.calculatePerimeter());
+    }
+
+    public static void testInheritance(){
+        Employee employee = new Employee();
+        employee.setName("Angie");
+    }
+
+    public static void testOverload(){
+        Rectangle rectangle = new Rectangle();
+        rectangle.print();
+
+        Square square = new Square();
+        square.print("square");
     }
 }
