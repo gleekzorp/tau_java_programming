@@ -13,9 +13,13 @@ public class ExceptionHandling {
 
     public static void main(String[] args){
 
-//        createNewFileIOException();
+        createNewFileIOException();
 //        createNewFileException();
-        numbersExceptionHandling();
+//        numbersExceptionHandling();
+
+        // The function that calls this method is now in control of how to handle the exception
+        // Either wrap this into a try/catch or add a throws IOException to the main method
+//        createNewFileRethrow();
     }
 
     public static void createNewFileException(){
@@ -36,6 +40,11 @@ public class ExceptionHandling {
             System.out.println("Directory does not exist");
             e.printStackTrace();
         }
+    }
+
+    public static void createNewFileRethrow() throws IOException{
+        File file = new File("resources/nonexistent.txt");
+        file.createNewFile();
     }
 
     public static void numbersExceptionHandling(){
